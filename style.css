@@ -208,3 +208,8 @@ nav a:active{
         font-size: 7px;
     }
 }
+@media screen and (max-width: 304px) {
+    body {
+        font-size: 6px;
+    }
+}
