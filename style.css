@@ -96,7 +96,8 @@ nav a:active{
     max-width: 300px;
 }
 .film p {
-    font-size: 0.9em;
+    font-size: 0.8em;
+    letter-spacing: -1;
 }
 .film img {
     width: 100%;
