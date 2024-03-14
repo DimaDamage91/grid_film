@@ -3,16 +3,39 @@ body {
     padding: 0;
     font-size: 16px;
 }
+@font-face {
+    font-family: "Pacifico";
+    src: url(./fonts/Pacifico/Pacifico-Regular.ttf) format("woff2");
+}
+@font-face {
+    font-family: "Permament";
+    src: url(./fonts/Permanent_Marker/PermanentMarker-Regular.ttf) format("woff2");
+}
+@font-face {
+    font-family: "Playfair";
+    src: url(./fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf) format("woff2");
+}
+@font-face {
+    font-family: "Whisper";
+    src: url(./fonts/Whisper/Whisper-Regular.ttf) format("woff2");
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(./fonts/Poppins/Poppins-Black.ttf) format("woff2");
+}
 /*header*/
 header{
     background-color: #212122;
     height: 50px;
     font-size: 1em;
+    position: fixed;
+    width: 100%;
 }
 nav {
     max-width: 80%;
     margin: 0 auto;
-    color: white;
+    color: #9c9897;
+    font-family: "Poppins";
     
 }
 .menu {
@@ -22,6 +45,7 @@ nav {
     align-items: center;
     height: 100%;
     gap: 20px;
+    font-size: 1.2em;
 }
 /*Cards0*/
 .cards0 {
@@ -30,6 +54,8 @@ nav {
     display: grid;
     align-items: center;
     height: 90vh;
+    font-family: "Permament";
+    font-size: 1.5em;
 }
 .animated-text {
     letter-spacing: 1px;
@@ -56,6 +82,7 @@ nav {
     grid-row-gap: 30px;
     grid-column-gap: 20px;
     padding-bottom: 40px;
+    font-family: "Playfair";
 }
 .film {
     display: flex;
@@ -88,6 +115,7 @@ nav {
     grid-row-gap: 30px;
     grid-column-gap: 20px;
     padding-bottom: 30px;
+    font-family: "Playfair";
 }
 .cards2 p {
     padding: 0;
@@ -99,20 +127,21 @@ nav {
 footer {
     background-color: #212122;
     width: 100%;
-    bottom: 0;
     height: 40px;
+    bottom: 0;
     position: fixed;
 }
 .foot {
     max-width: 80%;
     margin: 0 auto;
-    color: white;
+    color: #8f8a88;
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.9em;
     height: 100%;
-    font-size: 1em;
+    font-family: "Poppins";
 }
 
 @media screen and (max-width: 1530px) {
@@ -132,32 +161,49 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 30px;
     grid-column-gap: 20px;
+    padding-bottom: 60px;
     
     }
 }
-
-@media screen and (max-width: 600px) {
-    body {
+@media screen and (max-width: 661px) {
+    
+     body {
         font-size: 14px;
+    }
+}
+@media screen and (max-width: 648px) {
+    body {
+        font-size: 13px;
     }
     .cards1 {
         padding-bottom: 60px;
     }
+    
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 570px) {
     body {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 492px) {
     body {
         font-size: 10px;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 424px) {
     body {
         font-size: 9px;
+    }
+}
+@media screen and (max-width: 375px) {
+    body {
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 344px) {
+    body {
+        font-size: 7px;
     }
 }
