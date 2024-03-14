@@ -28,15 +28,16 @@ header{
     background-color: #212122;
     height: 50px;
     font-size: 1em;
-    position: fixed;
     width: 100%;
 }
-nav {
-    max-width: 80%;
-    margin: 0 auto;
-    color: #9c9897;
-    font-family: "Poppins";
-    
+
+nav a:hover{
+    color:#FF8C00;
+    cursor:pointer;
+}
+nav a:active{
+    padding-top: 3px;
+    color:#FF4500;
 }
 .menu {
     display: grid;
@@ -46,6 +47,10 @@ nav {
     height: 100%;
     gap: 20px;
     font-size: 1.2em;
+    max-width: 80%;
+    margin: 0 auto;
+    color: #9c9897;
+    font-family: "Poppins";
 }
 /*Cards0*/
 .cards0 {
@@ -104,7 +109,9 @@ nav {
     margin: 0;
     margin-top: 5px;
 }
-
+#rednum {
+    color: red;
+}
 /*Cards2*/
 .cards2{
     padding-top: 30px;
@@ -124,21 +131,15 @@ nav {
 }
 
 /*footer*/
-footer {
-    background-color: #212122;
-    width: 100%;
-    height: 40px;
-    bottom: 0;
-    position: fixed;
-}
+
+
 .foot {
-    max-width: 80%;
-    margin: 0 auto;
-    color: #8f8a88;
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
-    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    color: #8f8a88;
     font-size: 0.9em;
     height: 100%;
     font-family: "Poppins";

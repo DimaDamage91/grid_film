@@ -3,18 +3,21 @@ let unviewedB = document.getElementById('unviewed');
 
 let cards0Dis = document.getElementById('cards0');
 let cards1Dis = document.getElementById('cards1');
-let cards2Dis =document.getElementById('cards2');
+let cards2Dis = document.getElementById('cards2');
+let contentFoot = document.getElementById('footcontent')
 
 let viewed = function() {
     cards1Dis.style.display = 'grid';
     cards2Dis.style.display = 'none';
     cards0Dis.style.display = 'none';
+    contentFoot.style.display = 'none';
 }
 
 let unviewed = function() {
     cards1Dis.style.display = 'none';
     cards2Dis.style.display = 'grid';
     cards0Dis.style.display = 'none';
+    contentFoot.style.display = 'none';
 }
 
 unviewedB.addEventListener('click', unviewed);
